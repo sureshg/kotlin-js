@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Kotlin Demo App!</title>
+
+</head>
+<body>
+<label> Name : </label> <input type="text" id="name">
+
+<div/>
+<label> Email : </label> <input type="text" id="email">
+
+<div/>
+
+<h4> Temperature converter </h4>
+
+<div/>
+
+<label> Celcius : </label> <input type="text" id="celcius">
+
+<!-- For calling kotlin from javascript, the conversion is,
+     Kotlin.modules.<application>.<package>.<function> -->
+<input type="button" value="Convert" id="convert" onclick="Kotlin.modules.myapp.com.hawk.c2f(this)">
+
+<script type="application/javascript" src="js/lib/kotlin.js"></script>
+<script type="application/javascript" src="js/my-app.js"></script>
+
+
+</body>
+</html>
